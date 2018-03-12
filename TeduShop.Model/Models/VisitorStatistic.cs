@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace TeduShop.Model.Models
 {
     [Table("SystemConfigs")]
-    class VisitorStatistic
+   public class VisitorStatistic
     {
         [Key]
         public Guid ID { get; set; }
