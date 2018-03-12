@@ -20,6 +20,10 @@ namespace TeduShop.Model
         [Required]
         public int GroupID { get; set; }
 
+        [ForeignKey("GroupID")]
+        public virtual MenuGroup MenuGroup { set; get; }
+
+
         [Required]
         public string Target { get; set; }
         [Required]
