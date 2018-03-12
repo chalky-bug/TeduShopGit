@@ -7,9 +7,11 @@ namespace TeduShop.Model.Models
     public class Footer
     {
         [Key]
+        [MaxLength(50)]
         public string ID { get; set; }
 
         [Required]
+        //không cho phép null
         public string Content { get; set; }
     }
 }
